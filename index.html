@@ -6,7 +6,7 @@
     <title>MenuUSB</title>
 </head>
 <body>
-
+    
     <header class="header-nav">
         <nav class="navbar-container">
           <a href="#" class="home-link">
@@ -25,20 +25,61 @@
             </ul>
           </div>
         </nav>
-      </header>
+    </header>
   
-  <footer style="background-color: #ffc653; padding: 20px 0; position: fixed; bottom: 0; width: 100%; text-align: center;">
-    <div class="footer-content" style="margin: 0 auto;">
-        <p>&copy; 2024 Menu USB. Todos los derechos reservados.</p>
-        <p style="text-align: center;">Integrantes: Marlon Mora, Santiago Sanchez, Lina Fernandez, Juan Pizo</p>
+    <div class="banner">
+        <img src="https://universidadesyprofesiones.com/images/universidades/campus/universidad-de-san-buenaventura-banner.jpg" alt="Banner">
     </div>
-</footer>
-    
+    <div class="title-container">
+        <h1>Acerca de MenuUSB</h1>
+    </div>
+    <div class="about">
+        <div class="about-text">
+            <p>Este proyecto busca mejorar la experiencia de la comunidad de la Universidad de San Buenaventura (Cali) al facilitar el acceso a la información sobre los productos de las tiendas del campus sin necesidad de desplazarse. A veces no tenemos tiempo o disponibilidad para ir a las tiendas, por lo que hemos creado una manera de ver los productos y su disponibilidad en línea, permitiendo decidir si vale la pena visitarla o no.</p>
+        </div>
+        <div class="logo">
+            <img src="https://i.ibb.co/bsk2zTg/Menu-Usb-2.png" alt="Logo">
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="nuestras-tiendas">
+        <h2 style="font-family: Arial">Nuestras Tiendas</h2><br>
+        <div class="destacado-items">
+            <div class="item">
+                <img class="imagen-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqKaW3B7A0HxOWYJeBoMWAVTRO5uhZpqnHBgcD2Bi47Q&s" alt="img-isabella">
+                <h3>Isabella</h3>
+                <p>Somos un restaurante que te ofrece excelentes comidas desde desayunos hasta almuerzos y demás variedades para tu gusto.</p>
+            </div>
+            <div class="item">
+                <img class="imagen-item" src="https://media.istockphoto.com/id/981368726/es/vector/restaurante-de-comida-y-bebidas-logotipo-tenedor-cuchillo-fondo-vector-imagen.jpg?s=612x612&w=0&k=20&c=3mPGCDXyBeuGpxeuTlHkECM5rAW5cy07bDFi0i0ZCbw=" alt="img-restaurant">
+                <h3>Restaurant</h3>
+                <p>Somos un restaurante que ofrece una gran variedad de comidas y pasabocas, desde desayunos hasta almuerzos. Nuestro menú está diseñado para satisfacer todos los gustos, con opciones frescas y deliciosas.nos enorgullece brindar una experiencia culinaria que combina calidad y diversidad.</p>
+            </div>
+            <div class="item">
+                <img class="imagen-item" src="https://mir-s3-cdn-cf.behance.net/projects/404/de1350192683327.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="img-qbano">
+                <h3>Qbano</h3>
+                <p>Sándwich Qbano es una empresa Colombiana con más de 40 años en el mercado, experta en la preparación de sándwiches con recetas innovadoras, ingredientes frescos y de calidad.</p>
+            </div>
+            <div class="item">
+                <img class="imagen-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-I9ZdHFEh032j5rg2aAX4d1tOCrWf738lYth-7DPu4A&s" alt="img-dcafe">
+                <h3>D'Cafe</h3>
+                <p>Representa la unión, los amigos, la tradición y la caleñidad pues nuestros productos son la combinación perfecta para un atardecer en la sultana, para saborear la brisa caleña y acompañarnos a disfrutar.</p>
+            </div>
+        </div>
+    </div>
+  
+    <footer style="background-color: #ffc653; padding: 20px 0; position: fixed; bottom: 0; width: 100%; text-align: center;">
+        <div class="footer-content" style="margin: 0 auto;">
+            <p>&copy; 2024 Menu USB. Todos los derechos reservados.</p>
+            <p style="text-align: center;">Integrantes: Marlon Mora, Santiago Sanchez, Lina Fernandez, Juan Pizo</p>
+        </div>
+    </footer>
+  
 </body>
 </html>
 
 <style>
-    *,
+  *,
 	*::before,
 	*::after {
 		box-sizing: border-box;
@@ -91,5 +132,101 @@
 
     .navbar-link{
       color: #000;
+    }
+  
+    .banner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 550px;
+    }
+
+    .separator {
+        margin: 20px auto; 
+        border: none; 
+        height: 1px; 
+        background-color: #ccc; 
+        width: 80%; 
+    }
+
+    .nuestras-tiendas {
+        padding: 40px;
+        padding-top: 10px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .destacado-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .item {
+        transition: transform 0.3s ease;
+    }
+
+    .destacado-items p {
+        color: #333333;
+        font-family: Arial;
+    }
+
+    .destacado-items div {
+        background-color: #ffffffbd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 calc(25% - 40px);
+        box-sizing: border-box;
+        max-width: calc(25% - 40px);
+    }
+
+    h3 {
+        font-family: Arial;
+    }
+
+    .imagen-item {
+        border-radius: 10px;
+        width: 100%;
+        height: 260px;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        font-family: Arial;
+        color: #333333;
+        margin-right: 20px;
+        flex: 1;
+    }
+
+    .logo {
+        flex-shrink: 10;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title-container {
+        background-color: #FF914D; 
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .title-container h1 {
+        margin: 0;
+        font-family: Arial;
+        color: white;
     }
 </style>
